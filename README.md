@@ -53,14 +53,13 @@ bash setup_docker.sh
 
 ```shell
 https://<host>/admin
-email:admin@admin.com
+username:admin
 password:admin
 ```
 
 
 ### Requirements
 
-* Ubuntu 16+
 * Python3.6+
 * Postgres10+
 
