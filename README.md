@@ -43,7 +43,7 @@ Ensure below ports are not occupied by any running service.
 
 * 80,443 - `Nginx Webserver`
 
-### Setup
+### Deploying using docker
 
 ```shell
 bash setup_docker.sh
@@ -61,13 +61,14 @@ password:admin
 ### Requirements
 
 * Python3.6+
-* Postgres10+
 
 ### Run
 
 Run develop server.
 
 ```shell
+# Copy env.example to .env
+cp env.example .env
 # Migrate migrations
 ./manage.py migrate
 # Run server
