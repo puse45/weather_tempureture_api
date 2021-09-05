@@ -67,6 +67,8 @@ password:admin
 Run develop server.
 
 ```shell
+# Install required python libraries
+pip install -r requirements.txt
 # Copy env.example to .env
 cp env.example .env
 # Migrate migrations
