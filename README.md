@@ -1,0 +1,88 @@
+# Weather API Challenge
+
+This is an django API application that allows a user to get the minimum, maximum, average and median temperature for a given city and period of time.
+
+#### Expected deliverables
+
+Create a Django application with RESTful API
+
+* Django application must run locally
+* API must be in the format /api/locations/{city}/?days={number_of_days}
+* API must fetch weather data from some public API of your choice
+* API must compute min, max, average, and median temperature
+* Response format must be in the following structure:
+
+```json
+{
+  "maximum": "value",
+  "minimum": "value",
+  "average": "value",
+  "median": "value"
+}
+```
+
+## Deployment
+
+Project can be deployed in two ways.
+
+1. Docker Container
+2. Django Server(Development & test)
+
+## Deploy using Docker
+
+For quick setup, use docker.
+
+### Requirements
+
+* Docker
+* Docker-compose
+
+### Ports
+
+Ensure below ports are not occupied by any running service.
+
+* 80,443 - `Nginx Webserver`
+
+### Setup
+
+```shell
+bash setup_docker.sh
+```
+
+### Admin
+
+```shell
+https://<host>/admin
+email:admin@admin.com
+password:admin
+```
+
+
+### Requirements
+
+* Ubuntu 16+
+* Python3.6+
+* Postgres10+
+
+### Run
+
+Run develop server.
+
+```shell
+# Migrate migrations
+./manage.py migrate
+# Run server
+./manage.py runserver
+
+```
+
+### Run Test
+To run unit test.
+```shell
+$ ./manage.py test
+```
+
+### API Documentation
+[Documentation](http://localhost:8000/docs/)
+### API Collection
+[POSTMAN Collection](https://www.getpostman.com/collections/50dc924c6f119d6033f6)
