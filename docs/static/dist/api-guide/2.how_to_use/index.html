@@ -414,11 +414,11 @@
 
 
                 <h1 id="weather-temperature-forecast"><a class="toclink" href="#weather-temperature-forecast">Weather Temperature Forecast</a></h1>
-<p>This endpoint allows a user to get computed temperature forecast of not more than 10 days. </p>
+<p>This endpoint allows a user to get computed temperature forecast of not more than 10 days.</p>
 <h2 id="retrieve"><a class="toclink" href="#retrieve">Retrieve</a></h2>
-<p>[GET] <GatewayDomain/PublicIP>/api/locations/<city>/</p>
+<p>[GET] <GatewayDomain/PublicIP>/api/locations/&lt;<city>&gt;/</p>
 <p>This request returns computed weather temperature forecast of default 10 days if the user doesn't provide number of days.
-User is required to pass the city they wish to get temperature data from i.e. Capetown, Johannesburg, Nairobi, Mombasa, Kisumu, Kitui e.t.c </p>
+User is required to pass the city they wish to get temperature data from i.e. Capetown, Johannesburg, Nairobi, Mombasa, Kisumu, Kitui e.t.c</p>
 <pre><code class="language-json">{
     &quot;maximum&quot;: 32.3,
     &quot;minimum&quot;: 8.8,
@@ -426,7 +426,7 @@ User is required to pass the city they wish to get temperature data from i.e. Ca
     &quot;median&quot;: 20.1
 }
 </code></pre>
-<p>[GET] <GatewayDomain/PublicIP>/api/locations/<city>/?days=3
+<p>[GET] <GatewayDomain/PublicIP>/api/locations/&lt;</str:city>&gt;/?days=3
 A user can also override the default days to their need i.e. 1,2,4,7,8</p>
 <pre><code class="language-json">{
     &quot;maximum&quot;: 32.3,
