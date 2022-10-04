@@ -7,4 +7,4 @@ class LocationConfig(AppConfig):
     verbose_name = "Location Models"
 
     def ready(self):
-        import location.signals
+        import location.signals  # noqa

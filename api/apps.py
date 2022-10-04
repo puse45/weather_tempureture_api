@@ -7,4 +7,4 @@ class ApiConfig(AppConfig):
     verbose_name = "API Models"
 
     def ready(self):
-        import api.signals
+        import api.signals  # noqa
